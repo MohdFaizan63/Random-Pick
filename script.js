@@ -31,18 +31,22 @@ function genCircle() {
                     circle.classList.add("touched");
 
                     if (touchedCircles.size === expectedTouchCount && !selected) {
-                        selected = true;
+    selected = true;
 
-                        // Randomly select one of the touched circles
-                        const touchedArray = Array.from(touchedCircles);
-                        const randomIndex = touchedArray[Math.floor(Math.random() * touchedArray.length)];
+    // Show loading or wait 3 seconds before selecting
+    setTimeout(() => {
+        const touchedArray = Array.from(touchedCircles);
+        const randomIndex = touchedArray[Math.floor(Math.random() * touchedArray.length)];
 
-                        const allCircles = document.querySelectorAll(".circle-member");
-                        allCircles.forEach(c => {
-                            if (parseInt(c.dataset.index) === randomIndex) {
-                                c.classList.add("selected");
-                            }
-                        });
+        const allCircles = document.querySelectorAll(".circle-member");
+        allCircles.forEach(c => {
+            if (parseInt(c.dataset.index) === randomIndex) {
+                c.classList.add("selected");
+            }
+        });
+    }, 3000); // ⏱ 3 second delay
+
+
                     }
                 }
             });
