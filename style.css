@@ -1,4 +1,4 @@
-/* Reset & base */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     height: 100vh;
 }
 
-/* Heading */
+
 .heading h1 {
     margin: 20px 30px;
     color: aliceblue;
@@ -22,7 +22,7 @@ body {
     font-size: 2rem;
 }
 
-/* Input section */
+
 .inpbx {
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ body {
     background: #0cc;
 }
 
-/* Full-screen SVG canvas */
+
 #circle-svg {
     width: 100%;
     height: 100%;
@@ -68,7 +68,7 @@ body {
     z-index: 1;
 }
 
-/* Touch circles */
+
 #circle-svg circle.touch-circle {
     stroke: white;
     stroke-width: 2;
@@ -76,7 +76,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Selected winner circle */
+
 #circle-svg circle.selected {
     fill: lime;
     stroke: white;
@@ -109,6 +109,36 @@ body {
     }
 
     .inpbx button {
-        width: 100%; /* ✅ Makes the button full-width like input */
+        width: 100%; 
     }
 }
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.footer p {
+    margin: 0;
+    pointer-events: auto;
+}
+
+.footer a {
+    color: #0ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    pointer-events: auto;
+}
+
+.footer a:hover {
+    color: #0cc;
+    text-decoration: underline;
+}
+
