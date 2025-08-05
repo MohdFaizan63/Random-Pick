@@ -44,7 +44,7 @@ function genCircle() {
                 c.classList.add("selected");
             }
         });
-    }, 3000); // ⏱ 3 second delay
+    }, 5000); // ⏱ 3 second delay
 
 
                     }
