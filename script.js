@@ -1,23 +1,23 @@
 let expectedTouchCount = 0;
 let selected = false;
-let touches = {}; // To track touch positions
+let touches = {}; 
 
 function genCircle() {
     const count = parseInt(document.querySelector(".inpbx input").value);
     const svgCanvas = document.getElementById("circle-svg");
-    svgCanvas.innerHTML = ''; // Clear all circles
+    svgCanvas.innerHTML = ''; 
     expectedTouchCount = count;
     touches = {};
     selected = false;
 
     if (!(count > 0 && count <= 10)) {
     alert("Enter a number between 1 and 10.");
-    return; // ✅ stop the function here
+    return; 
 }
 
 }
 
-// Handle touch start events
+
 document.body.addEventListener('touchstart', (e) => {
     for (let t of e.changedTouches) {
         if (Object.keys(touches).length >= expectedTouchCount) return;
@@ -25,7 +25,7 @@ document.body.addEventListener('touchstart', (e) => {
         const id = `touch-${t.identifier}`;
         if (touches[id]) return;
 
-        // Create SVG circle at touch location
+        
         const svgCanvas = document.getElementById("circle-svg");
         const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circle.setAttribute("cx", t.pageX);
@@ -39,7 +39,7 @@ document.body.addEventListener('touchstart', (e) => {
         svgCanvas.appendChild(circle);
         touches[id] = circle;
 
-        // Check if all touches done
+   
         if (Object.keys(touches).length === expectedTouchCount && !selected) {
             selected = true;
 
