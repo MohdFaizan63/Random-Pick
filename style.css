@@ -88,3 +88,15 @@ body {
     box-shadow: 0 0 20px 5px lime;
     border: 3px solid white;
 }
+
+/* Keep your existing CSS */
+
+#circle-svg circle.touched {
+    fill: orange;
+}
+
+#circle-svg circle.selected {
+    fill: lime;
+    stroke: white;
+    stroke-width: 4;
+}
