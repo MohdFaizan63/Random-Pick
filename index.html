@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Who Will Pay?</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Will Pay?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Heading -->
         <div class="heading">
             <h1>Who Will Pay?</h1>
         </div>
+
+        <!-- Input: number of players -->
         <div class="inpbx">
-            <input type="number" placeholder="Enter number of players (1-10)">
+           <input type="number" placeholder="Enter number of players (1-10)" autocomplete="off">
+
             <button onclick="genCircle()">Enter</button>
         </div>
-        <div class="circle">
-            <svg id="circle-svg" width="100%" height="300"></svg>
-        </div>
+
+        <!-- Fullscreen SVG canvas for touches -->
+        <svg id="circle-svg"></svg>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
