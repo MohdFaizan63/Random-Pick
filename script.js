@@ -48,7 +48,7 @@ document.body.addEventListener('touchstart', (e) => {
                 const randomKey = keys[Math.floor(Math.random() * keys.length)];
                 const circle = touches[randomKey];
                 circle.classList.add("selected");
-            }, 3000);
+            }, 2000);
         }
     }
 });
