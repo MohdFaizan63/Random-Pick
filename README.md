@@ -3,7 +3,7 @@
 
 # 🎲 Random Pick – Who Will Pay?
 
-website link - https://mohdfaizan63.github.io/Random-Pick/
+#website link - https://mohdfaizan63.github.io/Random-Pick/
 
 This is a fun and simple web app that helps make quick random decisions.
 The main use case is deciding “Who will pay?” in a group of friends, but it can be used for any situation where you need a fair random choice.
