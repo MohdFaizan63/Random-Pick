@@ -10,7 +10,7 @@ The main use case is deciding “Who will pay?” in a group of friends, but it 
 
 ✨ Features
 
-🎯 Minimal and easy-to-use interface
+🎯 Minimal and easy-to-use interface that you will love
 
 🔘 One-click random selection
 
